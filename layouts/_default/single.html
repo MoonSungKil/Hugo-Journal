@@ -1,0 +1,37 @@
+{{define "main"}}
+
+<div class="single_journal_container">
+  <article class="single_journal">
+    <h1 class="single_journal_title md-4 mb-4">{{ .Title}}</h1>
+    <div class="single_journal_meta_data mb-4">
+      <div class="single_journal_image">
+        <img class="single_journal_image" src="{{ .Params.image}}" alt="{{ .Title}}" />
+      </div>
+      <div class="single_journal_info">
+        <span class="single_journal_author">Written by: {{ .Params.author}}</span>
+        <span class="single_journal_publisher">Published by: {{ .Params.publisher}}</span>
+        <span class="single_journal_date_created">
+          <time>Published at: {{ dateFormat .Site.Params.dateFormat .Date}}</time>
+        </span>
+        <span class="single_journal_tags">
+          {{ range (.GetTerms "tags")}}
+          <a href="{{ .Permalink}}"># {{.LinkTitle}}</a>
+          {{ end}}
+        </span>
+      </div>
+    </div>
+    <hr />
+    <div class="single_journal_content">
+      <p>{{ .Content}}</p>
+    </div>
+  </article>
+  <div class="single_journal_envelop_mark">
+    <img src="/img/mark.png" alt="envelop mark" />
+    <div class="single_journal_envelop_mark_publisher">
+      <img src="{{ .Params.publisherLogo}}" alt="" />
+    </div>
+    <div class="single_journal_envelop_banner"></div>
+  </div>
+</div>
+
+{{end}}

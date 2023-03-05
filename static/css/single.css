@@ -1,0 +1,131 @@
+.single_journal_container {
+  margin: 3rem;
+  border: 2px solid var(--borderGray);
+  padding: 0.5rem;
+  position: relative;
+}
+
+.single_journal {
+  border: 2px solid var(--borderGray);
+  padding: 2rem;
+}
+
+.single_journal_title {
+  border-bottom: 2px solid gray;
+  color: var(--colorWhite);
+  font-family: "Oswalld";
+}
+
+.single_journal_meta_data {
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+
+.single_journal_image {
+  width: 10rem;
+  height: 15rem;
+  box-shadow: 3px 3px 1px black;
+}
+
+.single_journal_info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  align-items: start;
+  justify-content: space-around;
+  gap: 2rem;
+  color: var(--colorWhite);
+}
+
+.single_journal_author {
+  border-bottom: 2px solid rgb(0, 128, 100);
+}
+
+.single_journal_publisher {
+  border-bottom: 2px solid rgb(27, 143, 189);
+}
+
+.single_journal_date_created {
+  border-bottom: 2px solid rgb(243, 158, 88);
+}
+
+.single_journal_tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.single_journal_tags a {
+  background-color: rgb(182, 25, 59);
+  text-decoration: none;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  box-shadow: 3px 3px 1px black;
+  color: var(--colorWhite);
+}
+
+.single_journal_tags a:hover {
+  background-color: var(--colorWhite);
+  color: rgb(182, 25, 59);
+  font-weight: bold;
+}
+
+.single_journal_envelop_mark {
+  position: absolute;
+  top: -2rem;
+  right: 0rem;
+}
+
+.single_journal_envelop_mark > img {
+  width: 8rem;
+  position: relative;
+  rotate: -30deg;
+  z-index: 2;
+}
+
+.single_journal_envelop_mark_publisher {
+  width: 3.8rem;
+  height: 3.8rem;
+  background-color: rgb(131, 1, 1);
+  box-shadow: 0px 0px 5px rgb(70, 1, 1);
+  position: absolute;
+  border-radius: 50%;
+  top: 1.4rem;
+  right: 1.8rem;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single_journal_envelop_mark_publisher > img {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+.single_journal_envelop_banner {
+  position: absolute;
+  height: 15rem;
+  width: 4rem;
+  background-color: rgb(5, 50, 68);
+  right: 1.8rem;
+  top: 4rem;
+  z-index: 1;
+  box-shadow: 3px 3px 3px -6px rgb(2, 2, 2), -3px -3px 3px -6px rgb(0, 0, 0);
+}
+
+.single_journal_envelop_banner::after {
+  content: "";
+  width: 2.9rem;
+  height: 3rem;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  rotate: 135deg;
+  bottom: -1.5rem;
+  right: 0.55rem;
+  box-shadow: 1px 1px 3px black, -1px -1px 3px black;
+}
+
+.single_journal_content {
+  color: var(--colorWhite);
+}

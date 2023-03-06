@@ -1,9 +1,9 @@
 :root {
-  --colorDark: rgb(35, 35, 35);
+  --colorDark: rgb(17, 17, 17);
   --colorWhite: rgb(233, 233, 233);
   --mainColor: rgb(29, 72, 128);
   --secondaryColor: rgb(206, 102, 53);
-  --bgBlack: rgb(0, 0, 0);
+  --backgroundColor: rgb(151, 151, 151);
   --borderGray: rgb(44, 44, 44);
 }
 
@@ -13,7 +13,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--bgBlack);
+  background-color: var(--backgroundColor);
 }
 
 body {

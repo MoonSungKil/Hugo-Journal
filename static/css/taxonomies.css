@@ -1,0 +1,60 @@
+.taxonomie {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorDark);
+}
+
+.taxonomie_header {
+  margin-top: 2rem;
+  font-family: "Lobster";
+  margin-bottom: 2rem;
+  text-align: center;
+  border-bottom: 2px solid var(--colorDark);
+}
+
+.taxonomie_list {
+  font-family: "Lobster";
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.taxonomie_link {
+  text-decoration: none;
+}
+
+.taxonomie_list_item {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.274), transparent);
+  list-style-type: none;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
+}
+
+.taxonomie_text {
+  color: var(--colorDark);
+  font-size: 1.3rem;
+  transition: margin-left 0.3s ease-in-out;
+  padding: 0;
+  margin: 0;
+}
+
+.taxonomie_list_item:hover .taxonomie_text {
+  margin-left: 43%;
+}
+
+.taxonomie_list_item:hover .taxonomie_authors {
+  color: rgb(0, 136, 84);
+}
+
+.taxonomie_list_item:hover .taxonomie_publishers {
+  color: rgb(15, 129, 235);
+}
+
+.taxonomie_list_item:hover .taxonomie_tags {
+  color: rgb(177, 26, 59);
+}
+
+.taxonomie_list_item:hover .taxonomie_categories {
+  color: rgb(255, 104, 34);
+}

@@ -105,7 +105,7 @@
 }
 
 .list_journal_meta > span {
-  padding: 0.1rem 0.2rem;
+  padding: 0.1rem 0.5rem;
   text-shadow: 1px 1px 1px black;
   color: var(--colorWhite);
 }
@@ -124,6 +124,15 @@
   padding: 0;
 }
 
+.list_journal_author a {
+  color: rgb(196, 196, 196);
+  text-decoration: none;
+}
+
+.list_journal_author a:hover {
+  color: rgb(0, 111, 238);
+}
+
 .list_journal_publisher {
   background-color: rgb(27, 143, 189);
   display: flex;
@@ -136,6 +145,15 @@
 .list_journal_publisher > * {
   margin: 0;
   padding: 0;
+}
+
+.list_journal_publisher a {
+  color: rgb(196, 196, 196);
+  text-decoration: none;
+}
+
+.list_journal_publisher a:hover {
+  color: rgb(0, 111, 238);
 }
 
 .list_journal_date {
@@ -191,6 +209,9 @@
   height: 100%;
   border-radius: 50%;
   background-color: var(--backgroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .list_journal_publisher_logo img {

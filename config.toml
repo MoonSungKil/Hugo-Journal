@@ -5,3 +5,9 @@ title = 'Macedonian Express Journal'
 
 [params]
 dateFormat = "Jan 2, 2006, 3:04PM"
+
+[taxonomies]
+    tag = "tags"
+    category = "categories"
+    author = "authors"
+    publisher = "publishers"

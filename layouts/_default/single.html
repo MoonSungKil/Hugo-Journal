@@ -8,8 +8,12 @@
         <img class="single_journal_image" src="{{ .Params.image}}" alt="{{ .Title}}" />
       </div>
       <div class="single_journal_info">
-        <span class="single_journal_author">Written by: {{ .Params.author}}</span>
-        <span class="single_journal_publisher">Published by: {{ .Params.publisher}}</span>
+        <span class="single_journal_author">Written by: 
+        <a href="{{ "/authors/" | relLangURL }}{{ .Params.authors | urlize }}">{{ .Params.authors }}</a></span>
+        <span class="single_journal_publisher">Published by: 
+          
+          <a href="{{ "/publishers/" | relLangURL }}{{ .Params.publishers | urlize }}">  {{ .Params.publishers}}</a>
+        </span>
         <span class="single_journal_date_created">
           <time>Published at: {{ dateFormat .Site.Params.dateFormat .Date}}</time>
         </span>
@@ -25,13 +29,15 @@
       <p>{{ .Content}}</p>
     </div>
   </article>
+  {{ if .Params.publisherLogo}}
   <div class="single_journal_envelop_mark">
     <img src="/img/mark.png" alt="envelop mark" />
     <div class="single_journal_envelop_mark_publisher">
-      <img src="{{ .Params.publisherLogo}}" alt="" />
+      <img src="{{ .Params.publisherLogo}}" alt="{{ .Params.publishers}}" />
     </div>
     <div class="single_journal_envelop_banner"></div>
   </div>
+{{end}}
 </div>
 
 {{end}}

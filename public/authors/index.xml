@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Macedonian Express Journal</title>
+    <link>http://example.org/authors/</link>
+    <description>Recent content in Authors on Macedonian Express Journal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 Mar 2023 18:40:18 +0100</lastBuildDate><atom:link href="http://example.org/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fernando Pessoa</title>
+      <link>http://example.org/authors/fernando-pessoa/</link>
+      <pubDate>Sat, 04 Mar 2023 18:40:18 +0100</pubDate>
+      
+      <guid>http://example.org/authors/fernando-pessoa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Franz Kafka</title>
+      <link>http://example.org/authors/franz-kafka/</link>
+      <pubDate>Sat, 04 Mar 2023 18:40:18 +0100</pubDate>
+      
+      <guid>http://example.org/authors/franz-kafka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Friedrich Nietsche</title>
+      <link>http://example.org/authors/friedrich-nietsche/</link>
+      <pubDate>Sat, 04 Mar 2023 18:40:18 +0100</pubDate>
+      
+      <guid>http://example.org/authors/friedrich-nietsche/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Herman Hesse</title>
+      <link>http://example.org/authors/herman-hesse/</link>
+      <pubDate>Sat, 04 Mar 2023 18:40:18 +0100</pubDate>
+      
+      <guid>http://example.org/authors/herman-hesse/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

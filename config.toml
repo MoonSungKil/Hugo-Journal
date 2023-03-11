@@ -1,10 +1,12 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Macedonian Express Journal'
+paginate = 999
 
 
 [params]
 dateFormat = "Jan 2, 2006, 3:04PM"
+
 
 [taxonomies]
     tag = "tags"

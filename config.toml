@@ -8,7 +8,7 @@ paginate = 999
 
 [params]
 dateFormat = "Jan 2, 2006, 3:04PM"
-header_image = "https://images.pexels.com/photos/7567222/pexels-photo-7567222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+header_image = "https://images.pexels.com/photos/4338093/pexels-photo-4338093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 bottom_image = "https://images.pexels.com/photos/1369476/pexels-photo-1369476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 description = """Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, 
 pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus. 

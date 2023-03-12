@@ -1,12 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    asdasdas
-  </body>
-</html>
+{{define "main"}}
+<div class="main_container">
+  <div
+    style="background-image: url({{.Site.Params.header_image}});"
+    class="main_header_image"
+  ></div>
+  <div class="main_text">
+    <h2>{{.Title}}</h2>
+    <p>{{ .Site.Params.description}}</p>
+  </div>
+  <div class="main_bottom">
+    <div class="main_taxonomies">
+      <!-- authors list -->
+      {{ partial "authors-list" .}}
+
+      <!-- journals list -->
+      {{ partial "journals-list" .}}
+
+      <!-- categories list -->
+      {{ partial "categories-list" .}}
+    </div>
+    <div
+      style="background-image: url({{.Site.Params.bottom_image}});"
+      class="main_bottom_image"
+    ></div>
+  </div>
+</div>
+
+{{end}}
